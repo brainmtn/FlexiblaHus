@@ -6,10 +6,15 @@ body {
   max-width: 100%;
 }
 
+/*		Width for the content on site		*/
+
 .wrapper {
 	max-width: 1500px;
 	margin: 0 25%;
 }
+
+
+/*		CSS Style for Header	*/
 
 .header {
 	overflow: hidden;
@@ -31,6 +36,15 @@ body {
 	padding: 65px 5px 15px 5px;
 	font-size: 14px;
   	align-items: baseline;
+  	color: #000;
+}
+
+.header-right a:link {
+	text-decoration: none;
+}
+
+.header-right a:visited {
+	text-decoration: none;
 }
 
 .header-right a:hover {
@@ -44,13 +58,35 @@ body {
 	background-color: #ea4f3d;
 }
 
+/*		CSS for LOGO		*/ 
+
 .logo {
 	padding-top: 5px;
 	height: auto;
 	justify-content: center;
 }
 
+/*		CSS for BANNERS */
+
 .banner img {
 	max-width: 100%;
 	height: auto;
+}
+
+/*		CSS Main Content		*/
+
+.headline {
+	padding: 25px 25px;
+	text-align: center;
+}
+
+.headline h3 {
+	font-weight: 300;
+	color: #888888;
+}
+
+/*		CSS Slider		*/
+
+ul {
+	list-style: none outside none;
 }

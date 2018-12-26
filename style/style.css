@@ -9,14 +9,14 @@ body {
 /*		Width for the content on site		*/
 
 .wrapper {
-	max-width: 1500px;
+	max-width: 840px;
 	margin: 0 25%;
+	padding: 25px;
 }
 
 .form {
 	text-align: center;
-	max-width: 1300px;
-
+	max-width: 1300px
 }
 
 
@@ -74,7 +74,7 @@ body {
 
 /*		CSS for BANNERS */
 
-.banner img {
+.top-banner img {
 	max-width: 100%;
 	height: auto;
 }
@@ -99,27 +99,91 @@ ul {
 
 /*	FORM Div 	*/
 
+/* hide up/down arrows ("spinners") on input fields marked type="number" */
+.no-spinners {
+  -moz-appearance:textfield;
+}
+
+.no-spinners::-webkit-outer-spin-button,
+.no-spinners::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 form {
-	text-align: left;
+	width: 790px;
 }
 
 form div {
 	display: inline-block;
 	height: 30px;
 	padding:10px;
+	text-align: left;
 }
 
 form div label {
 	display: block;
+	width: 350px;
 }
 
 form div input {
 	width: 350px;
 	border-radius: 5px;
 	height: 20px;
+	text-align: left;
 
 }
 
 .radio {
 	width: 10px;
 }
+
+.form-meddelande {
+	width: 730px;
+	height: 150px;
+	border-radius: 5px;
+	resize: none;
+}
+
+.submit {
+	color: white;
+	background-color: #ea4f3d;
+	border-radius: 5px;
+	width: 730px;
+	padding: 5px;
+
+}
+
+/*	CSS FOOTER 	*/
+
+
+.footerbg {
+	display: flex;
+	justify-content: center;
+	background-image: url('../images/footerbanner.png');
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+.overlay {
+	align-items: center;
+
+}
+
+.overlay img {
+	width: 790px;
+	height: auto;
+}
+
+.overlay h2 {
+	position: absolute;
+	top: 20%;
+	text-align: center;
+	left: 40%;
+	transform: translate(-20%, 10%);
+}
+
+
+
+

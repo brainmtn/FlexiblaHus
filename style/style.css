@@ -13,6 +13,12 @@ body {
 	margin: 0 25%;
 }
 
+.form {
+	text-align: center;
+	max-width: 1300px;
+
+}
+
 
 /*		CSS Style for Header	*/
 
@@ -76,7 +82,7 @@ body {
 /*		CSS Main Content		*/
 
 .headline {
-	padding: 25px 25px;
+	padding: 25px;
 	text-align: center;
 }
 
@@ -89,4 +95,31 @@ body {
 
 ul {
 	list-style: none outside none;
+}
+
+/*	FORM Div 	*/
+
+form {
+	text-align: left;
+}
+
+form div {
+	display: inline-block;
+	height: 30px;
+	padding:10px;
+}
+
+form div label {
+	display: block;
+}
+
+form div input {
+	width: 350px;
+	border-radius: 5px;
+	height: 20px;
+
+}
+
+.radio {
+	width: 10px;
 }

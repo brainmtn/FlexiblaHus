@@ -234,11 +234,11 @@ form div input {
 
 }
 
-
-
-
 .col4 {
 	text-align: right;
-	text-align: right;
 	font-size: 11px;
+}
+
+.col4 img {
+	width: 182px;
 }

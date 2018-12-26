@@ -214,7 +214,7 @@ form div input {
 .col1 {
 	display: inline-block;
 	width: 23%;
-	height: 220px;
+	height: 300px;
 	flex: 1;
 	color: black;
 }
@@ -223,7 +223,7 @@ form div input {
 	padding-left: 20px;
 	display: inline-block;
 	width: 23%;
-	height: 220px;
+	height: 300px;
 	flex: 1;
 	color: black;
 

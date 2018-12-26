@@ -23,7 +23,7 @@
 		</div>
 	</div>
 
-	<div class="banner"><img src="images/banner.png" alt="banner"></div>
+	<div class="top-banner"><img src="images/topbanner.png" alt="topbanner"></div>
 
 	<div class="wrapper">
 		<div class="headline">
@@ -50,42 +50,61 @@
 			<p> Fyll i formuläret nedan för att lämna en intresseanmälan så kontaktar vi dig </p>
 			
 			<form action="mailto:" method="post" accept-charset="utf-8" enctype="text/plain">
-				<div class="form-right">
+				<div>
 				    <label>Förnamn:* </label>
-				    <input type="text" />
+				    <input type="text" required/>
 				</div>
-				<div class="form-left">
+				<div>
 				    <label>Efternamn:*</label>
-				    <input type="text" />
+				    <input type="text" required/>
 				</div> <br>
 				<div>
 				    <label>Telefon dagtid:*</label>
-				    <input type="number" name="telefon dagtid" />
+				    <input type="number" name="telefon dagtid" class="no-spinners" required />
 				</div>
 				<div>
 					<label>Mobil:* </label>
-				    <input type="number" name="mobil" />
+				    <input type="number" name="mobil" class="no-spinners" required />
 				</div> <br>
 				<div>
 				    <label>Epost:*</label>
-				    <input type="email" name="epostadress" />
+				    <input type="email" name="epostadress" required />
 				</div>
 				<div>
 				   <label>Byggkommun:* </label>
-				    <input type="text" />
+				    <input type="text" required />
 				</div><br>
 				<div>
 				    <label>Hustyp jag är intresserad av:*</label>
-				    <input type="text" />
+				    <input type="text" required/>
 				</div>
 				<div>
-				    <label>Jag vill helst bli kontaktd via:</label>
-				    <input type="radio" value="telefon" class="radio"/> Telefon  <input type="radio" value="epost" class="radio"/>Epost
+				    <label>Jag vill helst bli kontaktad via:</label>
+				    <input type="radio" value="telefon" class="radio" name="contact" id="telefon" checked="true" /> Telefon  <input type="radio" value="epost" class="radio" name="contact" id="epost"/>Epost
+				</div> <br>
+				<div>
+				    <label>Meddelande:*</label>
+				    <textarea class="form-meddelande" name="meddelande" required></textarea>
 				</div>
+				<input type="submit" value="SKICKA" class="submit"></button>
 			</form>
-		</div>
-		
+		</div>		
 	</div>
+		<div class="footer">
+			<div class="bottom-banner">
+				<div class="footerbg">
+					<div class="wrapper">
+						<div class="overlay">
+						<img src="images/VSO.png">
+							<h2>
+								Låt FlexiblaHus bli ditt självklara val<br>
+								när du ska bygga ditt nya hus
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
     
 </body>
 </html>

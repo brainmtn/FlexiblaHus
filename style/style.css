@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
-/*	STANDARD	*/
+/*		STANDARD		*/
 
-body { 
+body {
   margin: 0;
   font-family: Sanita, Arial, Helvetica, sans-serif;
   max-width: 100%;
@@ -44,7 +44,7 @@ ul {
 }
 
 
-/*		CSS Style for Header	*/
+/*		CSS Style for Header		*/
 
 .header {
 	overflow: hidden;
@@ -95,7 +95,7 @@ ul {
 	justify-content: center;
 }
 
-/*		CSS for BANNERS */
+/*		CSS for BANNERS		*/
 
 .top-banner img {
 	max-width: 100%;
@@ -124,9 +124,11 @@ ul {
 /*		CSS Slider		*/
 
 .slider {
+	justify-content: center;
 	max-width: 790px;
-	margin: 1px;
 	height: auto;
+	padding: 25px;
+	border-bottom: 1px solid grey;
 }
 
 .main-slide img,
@@ -136,14 +138,18 @@ ul {
 
 .main-slide img {
 	height: 450px;
+	padding: 25px;
 }
 
 .imgs {
+	justify-content: center;
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	grid-gap: 5px;
 	height: 85px;
 	width: 100%;
+	margin: 0;
+	padding: 0 25px 25px 25px;
 }
 
 .imgs img {
@@ -151,17 +157,17 @@ ul {
 	width: 150px;
 }
 
-/*	FORM Div 	*/
+/*		FORM Div 		*/
 
 /* hide up/down arrows ("spinners") on input fields marked type="number" */
 .no-spinners {
-  -moz-appearance:textfield;
+	-moz-appearance:textfield;
 }
 
 .no-spinners::-webkit-outer-spin-button,
 .no-spinners::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+	-webkit-appearance: none;
+	margin: 0;
 }
 
 form {
@@ -208,7 +214,7 @@ form div input {
 
 }
 
-/*	CSS FOOTER 	*/
+/*		CSS FOOTER 		*/
 
 .footerbg {
 	display: flex;

@@ -10,10 +10,6 @@ body {
   line-height: 1.4;
 }
 
-li {
-	list-style: none;
-}
-
 a {
 	color: #000;
 	text-decoration: none;
@@ -23,6 +19,15 @@ a:hover {
 	font-size: 100%;
 	text-decoration: none;
 	color:#ea4f3d;
+}
+
+li {
+	list-style: none;
+}
+
+ul {
+	list-style: none outside none;
+	padding: 0px;
 }
 
 /*		Width for the content on site		*/
@@ -46,7 +51,6 @@ a:hover {
 	background-color: white;
 	margin: 0px 5px 10px 5px;
 }	
-
 
 .header a {
 	float: left;
@@ -110,11 +114,41 @@ a:hover {
 	color: #888888;
 }
 
+.information {
+	text-align: center;
+	padding: 0 5%;
+	border-bottom: 1px solid gray;
+	font-weight: 800;
+}
+
 /*		CSS Slider		*/
 
-ul {
-	list-style: none outside none;
-	padding: 0px;
+.slider {
+	max-width: 790px;
+	margin: 1px;
+	height: auto;
+}
+
+.main-slide img,
+.imgs img{
+	width: 100%;
+}
+
+.main-slide img {
+	height: 450px;
+}
+
+.imgs {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 5px;
+	height: 85px;
+	width: 100%;
+}
+
+.imgs img {
+	height: 85px;
+	width: 150px;
 }
 
 /*	FORM Div 	*/
@@ -175,7 +209,6 @@ form div input {
 }
 
 /*	CSS FOOTER 	*/
-
 
 .footerbg {
 	display: flex;

@@ -33,13 +33,14 @@ ul {
 
 .wrapper {
 	max-width: 1200px;
-	margin: 0 25%;
+	margin: 0 10%;
 	padding: 0 25px 25px 25px;
 }
 
 .form {
 	text-align: center;
 	max-width: 1200px;
+	border-top: 1px solid gray;
 }
 
 /*		CSS Style for Header		*/
@@ -47,8 +48,9 @@ ul {
 .header {
 	overflow: hidden;
 	background-color: white;
-	margin: 0px 5px 10px 5px;
 	display: flex;
+	margin: 0;
+    padding: 0 5%;
 }	
 
 .header a {
@@ -76,7 +78,7 @@ ul {
 }
 
 .menu a {
-	padding: 65px 5px 15px 5px;
+	padding: 65px 2px 15px 2px;
 	font-size: 1.5rem;
 	align-items: start;
 	color: #000;
@@ -133,7 +135,6 @@ ul {
 .information {
 	text-align: center;
 	padding: 0 5%;
-	border-bottom: 1px solid gray;
 	font-weight: 800;
 
 }
@@ -158,7 +159,7 @@ ul {
 	background-color: #ea4f3d;
 	color: white;
 	font-family: Asap;
-	font-size: 16px;
+	font-size: 2rem;
 	font-weight: 700;
 	text-align: center;
 }
@@ -166,7 +167,6 @@ ul {
 .panel-body,
 .panel-body a{
 	color: #888888;
-	font-size: 13px;	
 	margin: 0;
 	font-size: 1.5rem;
 }
@@ -179,7 +179,6 @@ ul {
 
 .panel-item label{
 	color: #888888;
-	font-size: 13px;	
 	margin: 0;
 	font-size: 1.5rem;
 }
@@ -241,35 +240,37 @@ ul {
 }
 
 form {
-	/* width: 790px; */
+	max-width: 1200px;
 	padding: 0 5%;
 }
 
 form div {
-	display: inline-block;
-	height: 30px;
-	padding:10px;
-	text-align: left;
+    display: inline-block;
+    /* height: 30px; */
+    padding: 10px;
+    text-align: left;
+    width: 20rem;
 }
 
 form div label {
-	display: block;
-	width: 350px;
+    display: block;
+    width: auto;
+    font-size: 1.5rem;
 }
 
 form div input {
-	width: 350px;
-	border-radius: 5px;
-	height: 20px;
-	text-align: left;
+    width: 20rem;
+    border-radius: 5px;
+    height: 20px;
+    text-align: left;
 }
 
 .radio {
-	width: 10px;
+	width: 5%;
 }
 
 .form-meddelande {
-	width: 730px;
+	width: 100%;
 	height: 150px;
 	border-radius: 5px;
 	resize: none;
@@ -279,7 +280,7 @@ form div input {
 	color: white;
 	background-color: #ea4f3d;
 	border-radius: 5px;
-	width: 730px;
+	width: 100%;
 	padding: 5px;
 	text-align: center;
 }
@@ -355,16 +356,216 @@ form div input {
 }
 
 
+@media only screen and (max-width: 640px) { 
 
-@media only screen and (min-width:2048px)
-{
-.overlay img {
-	height: 20rem;
-	padding: 0 20%;
-}
+	.menuLable {
+		display: block;
+		font-size: 3rem;
+	}
+	
+	.wrapper {
+		width: 100%;
+		margin: 0 5% 0 0;
+		box-sizing: border-box;
+		min-height: 100%;
+		height: auto;
+		position: relative;
+		padding: 5px;
+	}
+	
+	.logo {
+		height: 4em;
+		float: left;
+	}
+	
+	.nav {
+		width: 100%;
+		text-align: right;
+	}
+	
+	.header{
+		margin: 0;
+	}
+	
+	.information {
+		width: 80%;
+	}
+	
+	.top-banner img{
+		width: 100%;
+		overflow: hidden;
+	}
+	
+	.slider {
+		width: 80%;
+	}
+	
+	.main-slide img, 
+	.imgs img {
+		width: 100%;
+		height: auto;
+	}
+	
+	.imgs {
+		padding: 0 25px;
+		height: auto;
+	}
+	
+	.main-slide img{
+		width: 100%;
+		padding: 25px;
+	}
+	
+	.panel-item{
+		height: 5rem;
+		font-size: 1rem;
+	}
+	
+	.panel-header{
+		font-size: 0.8rem;
+		text-align: center;
+		font-weight: 800;
+	}
+	
+	.panel-body{
+		font-size: 1.2rem;
+		text-align: center;
+		font-weight: 800;
+	}
+	
+	.panel-body,
+	.panel-body a {
+		font-size: 1rem;
+		margin: 0;
+	}
+	
+	.item-right{
+		text-align: center;
+		float: none;
+		line-height: 4rem;
+		font-weight: 800;
+	}
+	
+	form {
+		padding: 0 5%;
+	}
+	
+	form div {
+		display: inline-block;
+		/* height: 30px; */
+		padding:10px;
+		text-align: left;
+		width: 20rem;
+	}
+	
+	form div label {
+		display: block;
+		width: auto;
+		font-size: 1rem;
+		font-weight: 800;
+	}
+	
+	form div input {
+		width: 20rem;
+		border-radius: 5px;
+		/* height: 20px; */
+		text-align: left;
+	}
+	
+	.form-meddelande {
+		height: auto;
+		border-radius: 5px;
+		resize: none;
+	}
+	
+	.submit {
+		color: white;
+		background-color: #ea4f3d;
+		border-radius: 5px;
+		width: 20rem;
+		padding: 5px;
+	
+	}
+	
+	.overlay{
+		padding: 0;
+	}
+	.overlay h2 {
+		position: absolute;
+		top: 20%;
+		text-align: center;
+		left: 35%;
+		transform: translate(-20%, 10%);
+		font-size: 1rem;
+	}
+	
+	.overlay img {
+		width: 80%;
+		max-height: 80px;
+	}
+	
+	.footerbg {
+		display: flex;
+		background-image: url('../images/footerbanner.png');
+		background-repeat: repeat-x;
+		position: relative;
+		text-align: center;
+		color: white;
+		width: 100%;
+		max-height: 100px;
+	}
+	
+	.footer-text {
+		display: grid;
+		grid-template-columns: auto auto;
+		height: 400px;
+		font-size: 1rem;
+	}
+	
+	.col1,
+	.col2,
+	.col3,
+	.col4{
+		width: auto;
+		height: auto;
+		padding: 5px;
+	}
+	
+	.col4 img{
+		height: 6rem;
+		width: auto;
+	}
+	
+	#toggle {
+		display: none;
+	}
+	
+	.menu {
+		width: 100%;
+		display: none;
+	}
+	
+	.menu a {
+		margin: 0;
+		font-weight: 800;
+		font-size: 0.75rem;
+		padding: 5px;
+		font-size: 1.25rem;
+	}
+	
+	#toggle:checked + .menu{
+		display: block;
+	}
+	
+	.panel-item label{
+		font-size: 1rem;
+		display: block;
+		margin: 0;
+		line-height: 1rem;
+	}
 }
 
-@media only screen and (max-width:1024px) { 
+@media only screen and (min-width: 640px) { 
 
 /*portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 
@@ -374,7 +575,6 @@ form div input {
 }
 
 .wrapper {
-	width: 80%;
 	margin: 0 10%;
 	box-sizing: border-box;
 	min-height: 100%;
@@ -402,25 +602,6 @@ form div input {
 	overflow: hidden;
 }
 
-.slider {
-	width: 80%;
-}
-
-.main-slide img, 
-.imgs img {
-	width: 100%;
-	height: auto;
-}
-
-.imgs {
-	padding: 0 25px;
-	height: auto;
-}
-
-.main-slide img{
-	width: 100%;
-	padding: 25px;
-}
 
 .panel-item{
 	height: 5rem;
@@ -453,7 +634,6 @@ form div input {
 }
 
 form {
-	width: 80%;
 	padding: 0 5%;
 }
 
@@ -481,9 +661,7 @@ form div input {
 
 .form-meddelande {
 	width: 20rem;
-	height: auto;
 	border-radius: 5px;
-	resize: none;
 }
 
 .submit {
@@ -560,10 +738,10 @@ form div input {
 }
 
 .menu a {
-	display: block;
+	/* display: block; */
 	margin: 0;
-	font-weight: 800;
-	font-size: 1rem;
+	font-weight: 200;
+	font-size: 1.2rem;
 }
 #toggle:checked + .menu{
 	display: none;
@@ -577,213 +755,98 @@ form div input {
 
 }
 
-/* Phone and tablets 640px*/
+@media only screen and (min-width:1024px){
+	.wrapper{
+		margin: 0 10%;
+		padding: 0 5%;
+	}
 
-@media only screen and (max-width:640px) { 
+	.panel-header,
+	.panel-body{
+		font-size: initial;
+	}
 
-.menuLable {
-	display: block;
-	font-size: 3rem;
+	.panel-item	{
+		text-align: left;
+		height: 1rem;
+	}
+
+	.panel-item	label{
+		display: inline-table;
+	}
+
+	.item-right{
+		float: right;
+		line-height: 0;
+		font-weight: 200;
+		line-height: 1;
+	}
+
+	.footer-text{
+		display: inline-flex;
+	}
+
+	.col4{
+		text-align: right;
+	}
+
 }
 
-.wrapper {
-	width: 100%;
-	margin: 0 5% 0 0;
-	box-sizing: border-box;
-	min-height: 100%;
-	height: auto;
-	position: relative;
-	padding: 5px;
+@media only screen and (min-width:1440px){
+	.wrapper{
+		margin: 0 10%;
+		padding: 0 5%;
+	}
+
+	.panel-header,
+	.panel-body{
+		font-size: initial;
+	}
+
+	.panel-item	{
+		text-align: left;
+	}
+
+	.item-right{
+		float: right;
+		line-height: 0%;
+	}
+
+	.footer-text{
+		display: inline-flex;
+	}
+
+	.col4{
+		text-align: right;
+	}
+
 }
 
-.logo {
-	height: 4em;
-	float: left;
+@media only screen and (min-width:1500px){
+	.wrapper{
+		margin: 0 20%;
+		padding: 0 5%;
+	}
+
 }
 
-.nav {
-	width: 100%;
-	text-align: right;
-}
+@media only screen and (min-width:2056px){
 
-.header{
-	margin: 0;
-}
-
-.information {
-	width: 80%;
-}
-
-.top-banner img{
-	width: 100%;
-	overflow: hidden;
+.wrapper{
+	margin: 0 30%;
+	width: 60%;
 }
 
 .slider {
-	width: 80%;
+	width: none;
 }
 
-.main-slide img, 
-.imgs img {
-	width: 100%;
-	height: auto;
+.footer-text{
+	display: inline-flex;
 }
 
-.imgs {
-	padding: 0 25px;
-	height: auto;
-}
-
-.main-slide img{
-	width: 100%;
-	padding: 25px;
-}
-
-.panel-item{
-    height: 5rem;
-    font-size: 1rem;
-}
-
-.panel-header{
-	font-size: 0.8rem;
-	text-align: center;
-	font-weight: 800;
-}
-
-.panel-body{
-	font-size: 1.2rem;
-	text-align: center;
-	font-weight: 800;
-}
-
-.panel-body,
-.panel-body a {
-	font-size: 1rem;
-	margin: 0;
-}
-
-.item-right{
-	text-align: center;
-	float: none;
-	line-height: 4rem;
-	font-weight: 800;
-}
-
-form {
-	/* width: 300px; */
-	padding: 0 5%;
-}
-
-form div {
-	display: inline-block;
-	/* height: 30px; */
-	padding:10px;
-	text-align: left;
-	width: 20rem;
-}
-
-form div label {
-	display: block;
-	width: auto;
-	font-size: 1rem;
-	font-weight: 800;
-}
-
-form div input {
-	width: 20rem;
-	border-radius: 5px;
-	/* height: 20px; */
-	text-align: left;
-}
-
-.form-meddelande {
-	height: auto;
-	border-radius: 5px;
-	resize: none;
-}
-
-.submit {
-	color: white;
-	background-color: #ea4f3d;
-	border-radius: 5px;
-	width: 20rem;
-	padding: 5px;
-
-}
-
-.overlay{
-	padding: 0;
-}
-.overlay h2 {
-	position: absolute;
-	top: 20%;
-	text-align: center;
-	left: 35%;
-	transform: translate(-20%, 10%);
-	font-size: 1rem;
-}
-
-.overlay img {
-	width: 80%;
-	max-height: 80px;
-}
-
-.footerbg {
-	display: flex;
-	background-image: url('../images/footerbanner.png');
-	background-repeat: repeat-x;
-	position: relative;
-	text-align: center;
-	color: white;
-	width: 100%;
-	max-height: 100px;
-}
-
-.footer-text {
-	display: grid;
-	grid-template-columns: auto auto;
-	height: 400px;
-	font-size: 1rem;
-}
-
-.col1,
-.col2,
-.col3,
 .col4{
-	width: auto;
-	height: auto;
-	padding: 5px;
+	text-align: right;
 }
 
-.col4 img{
-	width: 75%;
-}
-
-#toggle {
-	display: none;
-}
-
-.menu {
-	width: 100%;
-	display: none;
-}
-
-.menu a {
-	margin: 0;
-	font-weight: 800;
-	font-size: 0.75rem;
-	padding: 5px;
-	font-size: 1.25rem;
-}
-
-#toggle:checked + .menu{
-	display: block;
-}
-
-.panel-item label{
-	font-size: 1rem;
-	display: block;
-	margin: 0;
-	line-height: 1rem;
-}
 }

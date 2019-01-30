@@ -14,9 +14,12 @@
 <body>
 	<div class="wrapper">
 		<div class="header">
-			<img class="logo" src="images/logo.png">
 
-			<div class="header-right">
+			<img class="logo" src="images/logo.png">
+			<div class="nav">
+			<label class="menuLable" for="toggle">&#9776</label>
+			<input type="checkbox" id="toggle"/>
+			<div class="menu">
 				<a href="#" class="active">Hem</a>
 				<a href="#">Om oss</a>
 				<a href="#">Referenser</a>
@@ -24,11 +27,13 @@
 				<a href="#">Personal</a>
 				<a href="#">Kontakt</a>
 			</div>		
-			
+		</div>
 		</div>
 	</div>
 
-	<div class="top-banner"><img src="images/topbanner.png" alt="topbanner"></div>
+	<div class="top-banner">
+		<img src="images/topbanner.png" alt="topbanner">
+	</div>
 
 	<div class="wrapper">
 		<div class="headline">
@@ -151,7 +156,10 @@
 				    <label>Meddelande:*</label>
 				    <textarea class="form-meddelande" name="meddelande" required></textarea>
 				</div>
-				<input type="submit" value="SKICKA" class="submit"></button>
+				<br>
+				<div>
+					<input type="submit" value="SKICKA" class="submit"></button>
+				</div>
 			</form>
 		</div>		
 	</div>

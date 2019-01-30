@@ -303,7 +303,6 @@ form div input {
 }
 .overlay img {
 	height: 20rem;
-	padding: 0 20rem;
 }
 
 .overlay h2 {
@@ -357,8 +356,15 @@ form div input {
 
 
 
+@media only screen and (min-width:2048px)
+{
+.overlay img {
+	height: 20rem;
+	padding: 0 20%;
+}
+}
 
-@media (max-width:1024px) { 
+@media only screen and (max-width:1024px) { 
 
 /*portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 
@@ -570,7 +576,6 @@ form div input {
 }
 
 }
-
 
 /* Phone and tablets 640px*/
 

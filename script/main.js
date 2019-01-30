@@ -12,6 +12,7 @@ function imgClick(e) {
     imgs.forEach(img => (img.style.outline = ''));
 
     //Changes current image to src of clicked image
+
     current.src = e.target.src;
     console.log(e.target.src);
     console.log(current.src);

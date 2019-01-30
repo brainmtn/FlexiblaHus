@@ -31,17 +31,6 @@ ul {
 	padding: 0px;
 }
 
-/* @media (max-width: 600px) {
-	/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
-
-/* @media (min-width:641px) { portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones } */
-
-/* @media (min-width:961px) { tablet, landscape iPad, lo-res laptops ands desktops } */
-/* @media (min-width:1025px) { */
-	
-
-		/* Width for the content on site		*/ 
-
 .wrapper {
 	width: 900px;
 	margin: 0 25%;
@@ -59,38 +48,57 @@ ul {
 	overflow: hidden;
 	background-color: white;
 	margin: 0px 5px 10px 5px;
+	display: flex;
 }	
 
 .header a {
 	float: left;
 }
 
-.header-right {
+
+/*		Navigation Menu		*/
+
+.menuLable {
+	display: none;
+	font-size: 3rem;
+}
+
+#toggle{
+	display: none;
+}
+
+.nav {
+	text-align: right;
+	width: 100%;
+}
+
+.menu {
 	float: right;
 }
 
-.header-right a {
+.menu a {
 	padding: 65px 5px 15px 5px;
-	font-size: 14px;
-  	align-items: baseline;
-  	color: #000;
+	font-size: 2rem;
+  	align-items: start;
+	  color: #000;
+	  font-weight: 2s00;
 }
 
-.header-right a:link {
+.menu a:link {
 	text-decoration: none;
 }
 
-.header-right a:visited {
+.menu a:visited {
 	text-decoration: none;
 }
 
-.header-right a:hover {
+.menu a:hover {
 	background-color: #ea4f3d;
 	color: #fce8e5;
 	border-radius: 0px 0px 10px 10px;
 }
 
-.header-right a:active {
+.menu a:active {
 	color: #fce8e5;
 	background-color: #ea4f3d;
 }
@@ -131,6 +139,7 @@ ul {
 
 }
 
+/*		CSS PANEL 		*/
 .panels {
 	margin: 50px -10px;
 	overflow: auto;
@@ -152,6 +161,7 @@ ul {
 	font-family: Asap;
 	font-size: 16px;
 	font-weight: 700;
+	text-align: center;
 }
 
 .panel-body,
@@ -159,6 +169,7 @@ ul {
 	color: #888888;
 	font-size: 13px;	
 	margin: 0;
+	font-size: 1.5rem;
 }
 
 .panel-body a:hover {
@@ -167,6 +178,12 @@ ul {
 	color:#ea4f3d;
 }
 
+.panel-item label{
+	color: #888888;
+	font-size: 13px;	
+	margin: 0;
+	font-size: 1.5rem;
+}
 
 .panel-item{
 	padding: 10px 20px;
@@ -182,14 +199,7 @@ ul {
 	color: black;
 }
 
-		CSS Slider		
-
-/* .slider {
-	justify-content: center;
-	max-width: 790px;
-	height: auto;
-	border-bottom: 1px solid grey;
-} */
+/*		CSS Slider Pictures			*/
 
 .slider {
 	padding: 25px;
@@ -218,7 +228,7 @@ ul {
 	height: 85px;
 }
 
-/*		FORM Div 		*/
+/*		CSS FORM Div 		*/
 
 /* hide up/down arrows ("spinners") on input fields marked type="number" */
 .no-spinners {
@@ -272,7 +282,7 @@ form div input {
 	border-radius: 5px;
 	width: 730px;
 	padding: 5px;
-
+	text-align: center;
 }
 
 /*		CSS FOOTER 		*/
@@ -284,13 +294,15 @@ form div input {
 	position: relative;
 	text-align: center;
 	color: white;
+	width: 100%;
+	max-height: 250px;
 }
 
 .overlay{
 	padding-top: 25px;
 }
 .overlay img {
-	width: 900px;
+	height: 20rem;
 }
 
 .overlay h2 {
@@ -342,33 +354,49 @@ form div input {
 	width: 182px;
 }
 
-@media (max-width:320px) { 
+
+
+
+@media (max-width:1024px) { 
+
+/*portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+
+.menuLable {
+	display: none;
+	font-size: 3rem;
+}
 
 .wrapper {
-	margin: 0;
-	padding: 0;
+	width: 100%;
+	margin: 0 5% 0 0;
 	box-sizing: border-box;
 	min-height: 100%;
 	height: auto;
 	position: relative;
-	width: 300px;
 }
 
 .logo {
-	height: 3em;
+	height: 4em;
+	float: left;
 }
 
 .header{
-	width: 300px;
-	padding: 0 10px;
 	margin: 0;
+	padding: 0 5%;
 }
 
+.information {
+	width: 80%;
+}
 
 .top-banner img{
 	width: 100%;
 	max-height: auto;
 	overflow: hidden;
+}
+
+.slider {
+	width: 80%;
 }
 
 .main-slide img, 
@@ -378,39 +406,75 @@ form div input {
 }
 
 .imgs {
-	padding: 0 10px;
+	padding: 0 25px;
 	height: auto;
 }
 
 .main-slide img{
-	width: 80%;
+	width: 100%;
 	padding: 25px;
 }
 
+.panel-item{
+	height: 5rem;
+	font-size: 1rem;
+}
+
+.panel-header{
+	font-size: 0.8rem;
+	text-align: center;
+	font-weight: 800;
+}
+
+.panel-body{
+	font-size: 1.2rem;
+	text-align: center;
+	font-weight: 800;
+}
+
+.panel-body,
+.panel-body a {
+	font-size: 1rem;
+	margin: 0;
+}
+
+.item-right{
+	text-align: center;
+	float: none;
+	line-height: 4rem;
+	font-weight: 800;
+}
+
 form {
-	width: 300px;
+	width: 80%;
+	padding: 0 5%;
 }
 
 form div {
-	padding: 0;
+	display: inline-block;
+	/* height: 30px; */
+	padding:10px;
+	text-align: left;
+	width: 20rem;
 }
 
 form div label {
 	display: block;
 	width: auto;
-	height: auto;
+	font-size: 1rem;
+	font-weight: 800;
 }
 
 form div input {
-	width: auto;
+	width: 20rem;
 	border-radius: 5px;
 	height: 20px;
 	text-align: left;
 }
 
 .form-meddelande {
-	width: auto;
-	height: 150px;
+	width: 20rem;
+	height: auto;
 	border-radius: 5px;
 	resize: none;
 }
@@ -419,31 +483,38 @@ form div input {
 	color: white;
 	background-color: #ea4f3d;
 	border-radius: 5px;
-	width: auto;
+	width: 20rem;
 	padding: 5px;
+	text-align: center;
+	font-weight: 600;
 
 }
+
+
+.footerbg {
+	display: flex;
+	background-image: url("../images/footerbanner.png");
+	background-repeat: repeat-x;
+	position: relative;
+	text-align: center;
+	color: white;
+	width: 100%;
+	max-height: 100px;
+}
+
 .overlay h2 {
 	position: absolute;
 	top: 20%;
 	text-align: center;
 	left: 35%;
 	transform: translate(-20%, 10%);
-	font-size: 1rem;
+	font-size: 1.5rem;
 }
-
+.overlay,
 .overlay img {
 	width: 100%;
-	height: auto;
-}
-
-.footerbg {
-	display: flex;
-	justify-content: center;
-	background-image: url(../images/footerbanner.png);
-	position: relative;
-	text-align: center;
-	color: white;
+	height: 80px;
+	padding: 5px;
 }
 
 .footer-text {
@@ -460,5 +531,253 @@ form div input {
 	width: auto;
 	height: auto;
 	padding: 5px;
+	font-size: 1.25rem;
+}
+
+.col4 {
+	text-align: left;
+}
+
+.col4 img{
+	height: 6rem;
+	width: auto;
+}
+
+#toggle {
+	display: none;
+}
+
+.menu {
+	text-align: right;
+	display: block;
+}
+
+.menu a {
+	display: block;
+	margin: 0;
+	font-weight: 800;
+	font-size: 0.75rem;
+}
+#toggle:checked + .menu{
+	display: none;
+}
+.panel-item label{
+	font-size: 1rem;
+	display: block;
+	margin: 0;
+	line-height: 1rem;
+}
+
+}
+
+
+/* Phone and tablets 640px*/
+
+@media only screen and (max-width:640px) { 
+
+.menuLable {
+	display: block;
+	font-size: 3rem;
+}
+
+.wrapper {
+	width: 100%;
+	margin: 0 5% 0 0;
+	box-sizing: border-box;
+	min-height: 100%;
+	height: auto;
+	position: relative;
+}
+
+.logo {
+	height: 4em;
+	float: left;
+}
+
+.nav {
+	width: auto;
+}
+
+.header{
+	margin: 0;
+}
+
+.information {
+	width: 80%;
+}
+
+.top-banner img{
+	width: 100%;
+	overflow: hidden;
+}
+
+.slider {
+	width: 80%;
+}
+
+.main-slide img, 
+.imgs img {
+	width: 100%;
+	height: auto;
+}
+
+.imgs {
+	padding: 0 25px;
+	height: auto;
+}
+
+.main-slide img{
+	width: 100%;
+	padding: 25px;
+}
+
+.panel-item{
+    height: 5rem;
+    font-size: 1rem;
+}
+
+.panel-header{
+	font-size: 0.8rem;
+	text-align: center;
+	font-weight: 800;
+}
+
+.panel-body{
+	font-size: 1.2rem;
+	text-align: center;
+	font-weight: 800;
+}
+
+.panel-body,
+.panel-body a {
+	font-size: 1rem;
+	margin: 0;
+}
+
+.item-right{
+	text-align: center;
+	float: none;
+	line-height: 4rem;
+	font-weight: 800;
+}
+
+form {
+	/* width: 300px; */
+	padding: 0 5%;
+}
+
+form div {
+	display: inline-block;
+	/* height: 30px; */
+	padding:10px;
+	text-align: left;
+	width: 20rem;
+}
+
+form div label {
+	display: block;
+	width: auto;
+	font-size: 1rem;
+	font-weight: 800;
+}
+
+form div input {
+	width: 20rem;
+	border-radius: 5px;
+	/* height: 20px; */
+	text-align: left;
+}
+
+.form-meddelande {
+	height: auto;
+	border-radius: 5px;
+	resize: none;
+}
+
+.submit {
+	color: white;
+	background-color: #ea4f3d;
+	border-radius: 5px;
+	width: 20rem;
+	padding: 5px;
+
+}
+
+.overlay{
+	padding: 0;
+}
+.overlay h2 {
+	position: absolute;
+	top: 20%;
+	text-align: center;
+	left: 35%;
+	transform: translate(-20%, 10%);
+	font-size: 1rem;
+}
+
+.overlay img {
+	width: 80%;
+	max-height: 80px;
+}
+
+.footerbg {
+	display: flex;
+	background-image: url('../images/footerbanner.png');
+	background-repeat: repeat-x;
+	position: relative;
+	text-align: center;
+	color: white;
+	width: 100%;
+	max-height: 100px;
+}
+
+.footer-text {
+	display: grid;
+	grid-template-columns: auto auto;
+	height: 400px;
+	font-size: 1rem;
+}
+
+.col1,
+.col2,
+.col3,
+.col4{
+	width: auto;
+	height: auto;
+	padding: 5px;
+}
+
+.col4 img{
+	width: 50%;
+}
+
+#toggle {
+	display: none;
+}
+
+.menu {
+	text-align: center;
+	width: 100%;
+	display: none;
+}
+
+.menu a {
+	display: block;
+	margin: 0;
+	font-weight: 800;
+	font-size: 0.75rem;
+}
+
+
+#toggle:checked + .menu{
+	display: block;
+
+}
+
+.panel-item label{
+	font-size: 1rem;
+	display: block;
+	margin: 0;
+	line-height: 1rem;
 }
 }
